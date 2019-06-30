@@ -17,6 +17,17 @@ module.exports = {
   rules: {
   },
   overrides: [
+    // async/await
+    {
+      files: ['app/**/*.js'],
+      plugins: [
+        'disable-features',
+      ],
+      rules: {
+        'disable-features/disable-async-await': 'error',
+        'disable-features/disable-generator-functions': 'error',
+      }
+    },
     // node files
     {
       files: [

@@ -1,0 +1,19 @@
+{{input 
+  type=type
+  value=value
+  placeholder=placeholder
+  autocomplete=autocomplete
+  disabled=disabled
+  class=inputClass
+  name=name
+  id=inputElementId}}
+
+{{#if displayErrorMessage}}
+<div class='input-error'>
+  {{#if showErrorMessage}}
+  <div class='error test-error'>
+    {{errorMessage}}
+  </div>
+  {{/if}}
+</div>
+{{/if}}
